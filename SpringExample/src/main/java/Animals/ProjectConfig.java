@@ -19,4 +19,14 @@ public class ProjectConfig {
         d.setName("Volt");
         return d;
     }
+
+    @Bean
+    String friend_1() {
+        return "Dog and cat can be friends";
+    }
+
+    @Bean(value = "enemy")
+    String friend_2() {
+        return "Dog and cat can not be friends";
+    }
 }
